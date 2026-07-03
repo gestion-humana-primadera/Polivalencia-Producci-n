@@ -49,7 +49,6 @@
         <option value="Prensa">Prensa</option>
         <option value="Aux Maderas">Aux Maderas</option>
         <option value="Aux Conti">Aux Conti</option>
-        
     </select>
 
     <label>Tema / Categoría <span class="req">*</span></label>
@@ -89,357 +88,18 @@
     let imagenB64 = "";
 
     const catalogo = {
-    "Vecoplan": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Ficha tecnica centerline de vecoplan",
-        "Tipologias de materias primas",
-        "Funcionamiento de maquinaria amarilla para alimentar los equipos",
-        "Partes de la maquina",
-        "Consumibles de la maquina",
-        "Proceso de vecoplan: entradas y salidas",
-        "Procedimiento triturado en Vecoplan",
-        "Alimentación material Vecoplan",
-        "Instructivo cambio cuchillas vecoplan",
-        "Instructivo Cambio contracuchillas vecoplan",
-        "Instructivo Limpieza Vecoplan",
-        "Instructivo Revisión chip Vecoplan",
-        "Instructivo triturado de reciclado limpio para prueba BE",
-        "Instructivo Alimentación de material a Vecoplan para prueba BE",
-        "Instructivo de desatasque del equipo",
-        "Reporte de novedades del equipo durante la operación",
-        "Reporte de información en la bitacora (Física y Excel)",
-        "Procedimiento para solicitud de insumos en almacén",
-        "Proceso para realizar Check List de la línea",
-        "Inducción para reportar desviaciones de mantenimiento en los equipos."
-    ],
-    "Hacker": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Ficha tecnica centerline de hacker",
-        "Tipologias de materias primas",
-        "Funcionamiento de maquinaria amarilla para alimentar los equipos",
-        "Partes de la maquina",
-        "Consumibles de la maquina",
-        "Instructivo de desatasque del equipo",
-        "Reporte de novedades del equipo durante la operación",
-        "Reporte de información en la bitacora (Física y Excel)",
-        "Proceso de hacker: entradas y salidas",
-        "Instructivo Cambio contracuchilla hacker",
-        "Cambio cuchillas hacker",
-        "Instructivo Limpieza astilladora hacker",
-        "Formula de alimentación a madera verde",
-        "Revisión de chip de madera verde",
-        "Procedimiento para solicitud de insumos en almacén",
-        "Proceso para realizar Check List de la línea",
-        "Inducción para reportar desviaciones de mantenimiento en los equipos."
-    ],
-    "Cargador": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Partes de la maquina",
-        "Reporte de novedades del equipo durante la operación",
-        "Reporte de información en la bitacora (Física y Excel)",
-        "Proceso de cargador",
-        "Instructivo alimentación de material a mesa de reciclado y verde",
-        "Instructivo limpieza cargador frontal",
-        "Instructivo aforo tolva madera verde",
-        "Instructivo aforo tolva madera reciclada",
-        "Instructivo limpieza mesa alimentación",
-        "Operación de cargador",
-        "Certificación de competencias del cargador",
-        "Procedimiento para solicitud de insumos en almacén",
-        "Proceso para realizar Check List de la línea",
-        "Inducción para reportar desviaciones de mantenimiento en los equipos."
-    ],
-    "Afilado": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Consumibles de la maquina",
-        "Realizar cambio de rotor (desmontaje y montaje).",
-        "Realizar lavado de rotor.",
-        "Realizar desmontaje de cuchillas del rotor.",
-        "Realizar desacople de cuchillas del portacuchillas.",
-        "Realizar limpieza de cuchillas.",
-        "Realizar alistamiento de afiladora para proceso de afilado.",
-        "Adecuar equipo para los angulos de afilado de cuchillas según corresponda.",
-        "Realizar afilado de cuchillas.",
-        "Realizar acople de cuchillas afiladas con portacuchillas.",
-        "Realizar montaje de cuchillas en el rotor.",
-        "Realizar calibración de resalto según parametro establecido.",
-        "Realizar cambio de contracuchillas de rotor de molinos y refinadores.",
-        "Realizar cambio de zapatas y elementos de molienda en molinos y refinadores.",
-        "Realizar cambio de placas de desgaste en molinos.",
-        "Realizar calibración de contracuchillas y cuchillas de acuerdo al parametro.",
-        "Instructivos de proceso de afilado y calibración de rotor.",
-        "Formato de seguimiento a calibración y cambio de rotores.",
-        "Realizar diligenciamiento de bitacora de madera humeda.",
-        "Formulas de madera alimentada en molinosde acuerdo a la referencia fabricada.",
-        "Funcionamiento general de molinos y reciclado.",
-        "Variables a controlar en molinos y afilado.",
-        "Centerline molinos",
-        "Funcionamiento de un molino pallmann",
-        "Procedimiento para solicitud de insumos en almacén",
-        "Proceso para realizar Check List de la línea",
-        "Inducción para reportar desviaciones de mantenimiento en los equipos."
-    ],
-    "Molinos": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Ficha tecnica centerline de Molinos",
-        "Tipologias de materias primas",
-        "Partes de la maquina",
-        "Proceso de molienda de madera verde",
-        "Proceso de molienda de madera reciclada",
-        "Induccion especifica en molinos: PZKR12-450 y PZKR14-450",
-        "Formulación de maderas",
-        "Cambio de rotores en molinos",
-        "Funcionamiento cleanomat en los molinos y sus cuidados.",
-        "Funcionamiento del rodillo magnetico",
-        "Funcionamiento del agitador del silo de molinos",
-        "Funcionamiento linea de reciclado",
-        "Cambio de piezas de desgaste: Zapatas, Contracuchillas, Placas de Desgaste, Anillos de Desgaste",
-        "Calibración del cuchilla y contracuchilla",
-        "Seguimiento a las aperturas de metal.(que debe hacer al aumentar aperturas por metal en cassel)",
-        "Funcionaiento afiladora de cuchillas",
-        "Diligenciamiento de bitacoras",
-        "Analisis acr",
-        "Indicadores del area",
-        "Calibrador Pie de rey y flexometro",
-        "Solicitud de consumibles, cuentas y centros de costo",
-        "Operación manual y automatica de equipos desde paneles locales.",
-        "Procediminiento de cambio de anillo portacuchilla",
-        "Procediminiento de cambio de piezas de desgaste molinos",
-        "Procedimiento cambio de cuchillas y contra cuchilla  vecoplan pequeño",
-        "Procedimiento limpieza de tamiz chip cleaner",
-        "Procedimiento limpieza de magnetos limpieza de reciclado",
-        "Proceso de desatasque de un molino",
-        "Cambio de  piezas de desgaste refinadores",
-        "Aspectos de atencion y revision en los molinos",
-        "Interpretacion de pantalla de operación reciclado",
-        "Interpretacion de pantalla de operación molinos incluyendo molino 1",
-        "Interpretacion silos de madera humeda(niveles, tornillo doble, elevador)",
-        "Control de calidad Granulometrias y esbeltez",
-        "Formulas de madera y alimentacion",
-        "Interpretacion y verificacion del sistema de extraccion en molinos junto la operación de las valvulas.",
-        "Explicion del funcionamiento dynascreen",
-        "Ajustes varios limpieza de reciclado GAP,velocidades, flujos",
-        "Sistemas de bloqueo y etiquetado lototo para intervenciones.",
-        "Sistemas de seguridad de los equipos y donde bloquear para realizar intervenciones"
-    ],
-    "Secador": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Ficha tecnica centerline de Secador",
-        "Tipologias de materias primas",
-        "Partes de la maquina",
-        "Consumibles de la maquina",
-        "Silos de madera húmeda, rechazo, polvo, madera seca.",
-        "Tornillos de transporte de material.(verticales, horizontales, inyectores, doble efecto, sensores de atasque, chutas.etc)",
-        "Agitadores de todos los silos",
-        "Banda bascula madera húmeda( peines rotativos, cinta transportadora, sensores inductivos de nivel, neodimio)",
-        "Cámara de combustión ventiladores y ciclones de ceniza.",
-        "Alimentación de polvo y sistemas asociados.",
-        "Secador(banda de alimentacion,ventilador principal, multiciclones, válvulas rotativas, transportadores de cadena.)",
-        "Multiciclones: Separación de particulas finas",
-        "Red contra incendios(sistemas de detección, inyección, sistema visualización grecon.)",
-        "Zarandas(silo firelock, mangas, cribas tamices.)",
-        "Sistemas de transporte de cada una de las descargas de las zarandas.",
-        "Airgrader",
-        "Refinadores y ciclón filtros.",
-        "Blowers y sistema de ciclón filtros en el silo de polvo.",
-        "Winsifter y sistemas de transporte de material(ventiladores, ciclones)",
-        "Pantallas de operaciones",
-        "Ubicación de paneles de operación local.",
-        "Interpretación pantallas de operación quemador.",
-        "Interpretación pantallas de operación madera húmeda",
-        "Interpretación pantallas de operación área de zarandas",
-        "interpretación pantalla sistema grecon.",
-        "interpretación y control de cámaras.",
-        "Interpretación de fallas suministradas por pantallas de operación.",
-        "Capacidades en zonas de operación( banda bascula, zarandas)",
-        "Control de humedades en la operación. En la entrada y salida del secador.",
-        "Control en la operación de refinadores.(condiciones de arranque)",
-        "Operación del quemador en manual y automático,( válvulas, valores normales de operación, control de temperaturas salida del secador)",
-        "Interpretación de temperaturas en sistema completo del secador.",
-        "Proceso de quemado de polvo en producción y sin producción.(temperaturas min para poder quemar polvo)",
-        "Operación de filtros de extracción de finalizado y zarandas.",
-        "Dosificación de madera húmeda y rechazo",
-        "¿Como arrancar en forma manual desde los paneles locales equipos en zarandas?.",
-        "¿Como interpretar lo niveles de los silos y en que momento debo parar el paso de material para evitar que quede material en los transportes?.",
-        "¿Como y cuando puedo resetear fallas en el sistema grecon?",
-        "¿Cómo debe arrancar a dosificar material y que condiciones debo tener para poderlo hacer?.",
-        "¿Cómo debo alimentar la banda bascula para evitar atasques?",
-        "¿Cuál es el procedimiento para el desatasque de equipos y su respectivo reset para arranque?",
-        "¿En que casos debo rechazar material y como hacerlo?",
-        "Funcionamiento de las zarandas y su principio",
-        "¿Cómo debo organizar el equipo para realizar limpieza de neodimio? Ver procedimiento",
-        "¿Cómo debo actuar en caso de caída de tensión?(ver condiciones, válvulas, grecon, el secador debe estar girando con la planta de emergencia.",
-        "¿Cómo realizar inspecciones en el equipo evitando descargas de grecon?(procedimiento para inhabilitar zonas en grecon)",
-        "¿Cómo hacer el cambio de mangas en las zarandas?",
-        "¿Cómo alimentar solo zaranda 2 o regular el paso entre zarandas?"
-    ],
-    "Cocinas": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Tipologias de materias primas (Químicos)",
-        "Partes de la maquina",
-        "Realizar encendido de equipos en la secuencia correcta en cocinas y blenders.",
-        "Solicitar a almacén las materias primas y consumibles requeridos en el proceso.",
-        "Realizar preparación del endurecedor.",
-        "Tomar la muestra de endurecedor y llevarla al laboratorio para su análisis.",
-        "Tomar la muestra de granulometrias y humedades en capa interna y capa externa en banda báscula y formadoras y llevarla al laboratorio para su análisis.",
-        "Realizar la preparación de resina/pigmento para el tablero RH.",
-        "Realizar rutina de inspección y limpieza de las bandas basculas.",
-        "Realizar rutina de inspección y limpieza de las boquillas en blenders.",
-        "Realizar calibración de las boquillas en blenders.",
-        "Realizar rutina de inspección de funcionamiento del chiller y enfriamiento de los blenders.",
-        "Realizar rutina de inspección y limpieza del sistema de dosificación del desmoldante.",
-        "Realizar la preparación del desmoldante en línea de formación y preprensa.",
-        "Realizar permisos de seguridad y descargue de resina y emulsión en tanques de almacenamiento.",
-        "Realizar las limpiezas requeridas cuando se presenten atasque en el proceso.",
-        "Apoyar al operario de la prensa en las limpiezas de rutina que requiera.",
-        "Realizar cambio de resina cuando se realice cambio de comisión.",
-        "Realiza aforo de vasos para verificar caudal de consumo.",
-        "Realizar entrega de pallets a finalizado",
-        "Realizar limpieza de los rechazos de la separadora de discos superior e inferior",
-        "Reporte de novedades del equipo durante la operación",
-        "Capacitación proceso contiroll",
-        "Variables críticas de encolado",
-        "Funcionamiento del sistema de desmoldante de formación. Problemas y soluciones. Rutina de limpieza",
-        "Preparación de endurecedor y resina-pigmento. Problema y soluciones",
-        "Rutina de limpieza de contiroll en operación",
-        "Proceso tablero baja emisión"
-    ],
-    "Ferrocontrol": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Ficha tecnica centerline de Ferrocontrol",
-        "Partes de la maquina",
-        "Consumibles de la maquina",
-        "Realizar encendido de equipos en la secuencia correcta en ferrocontrol y shs.",
-        "Realizar medición de densidad del tablero.",
-        "Realizar medición de diagonales del tablero.",
-        "Realizar medición de largo y ancho del tablero.",
-        "Realizar medición constante del espesor del tablero en diferentes puntos.",
-        "Realizar cambio de comisión en ferrocontrol y shs.",
-        "Realizar la toma de muestra de tablero para laboratorio.",
-        "Realizar la toma de muestra cada 30 minutos para revisar espesores y densidad",
-        "Realizar limpieza de sensores de los equipos (Grecon, mesas shs, enfriadores).",
-        "Realizar el cambio de sierras viajeras, destrozadoras y rechazo.",
-        "Revisar funcionamiento del sistema Oñaz: Tanque de foso, Tanque exterior, Limpieza de malla.",
-        "Realizar actividades de orden y aseo de su zona",
-        "Reporte de novedades del equipo durante la operación",
-        "Interpretación de pantallas de operación"
-    ],
-    "Prensa": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Ficha tecnicas de operación",
-        "Tipologias de materias primas (Maderas y Químicos)",
-        "Consumibles de la maquina",
-        "Funcionamiento tanques de resinas y emulsión",
-        "Funcionamiento de las cocinas: Resina, Emulsión, Endurecedor y Agua",
-        "Sistema de transporte de material: redler y tornillos",
-        "Funcionamiento  Blenders capa interna y capa externa",
-        "Funcionamiento del sistema de enfriamiento: Chiller",
-        "Funcionamiento Formadoras capa externa",
-        "Funcionamiento Formadoras capa interna",
-        "Funcionamiento separadora de discos",
-        "Funcionamiento linea de formación",
-        "Funcionamiento sistema de medidor de unidad en línea",
-        "Funcionamiento sistema de aspersión de desmoldante",
-        "Funcionamiento Imanes ferrosos en la linea",
-        "Funcionamiento Pre prensa",
-        "Funcionamiento Mesa bascula linea de formación",
-        "Funcionamiento Sistema de Deteccion cassel",
-        "Funcionamiento Sistema de rechazo de material (nariz hasta silo de rechazo)",
-        "Funcionamiento Prensa contiroll",
-        "Funcionamiento Sistema ferrocontrol",
-        "Funcionamiento Sistema medidor de espesor y ampollas: Grecom",
-        "Sierras y tipo de sierras",
-        "Funcionamiento SHS (sierras de rechazo, mesas de transporte, cooler,staker)",
-        "Funcionamiento Mesas de salida pallets.",
-        "Funcionamiento Sistemas de extraccion de linea contiroll(filtro ferrocontrol, filtro formacion)",
-        "Funcionamiento Sistema de transporte de material de rechazo(sistema blower)",
-        "Funcionamiento Sistema termico prensa",
-        "Funcionamiento Sistema hidraulico de la prensa y pre prensa",
-        "Funcionamiento Sistema OÑAZ",
-        "Funcionamiento red contra incendios",
-        "Funcionamiento Sistema Firefly",
-        "Operación manual de equipos desde paneles locales.",
-        "Sistemas de bloqueo y etiquetado para intervenciones.",
-        "Funcionamiento y condiciones para cerrar nariz",
-        "Verificacion de funcionamiento bandas de la prensa.(cuidados, revision bolt y sistemas de centrado de la banda)",
-        "Interpretacion de pantallas de monitoreo operación linea.",
-        "Manipulacion de parametros de operación desde pantalla de parametros.",
-        "Como se fabrica en linea de contiroll siguiendo center lines",
-        "Como cambiar de referencia en IMAL y pantalla de parametros.",
-        "Operación y ajustes de espesores",
-        "Interpretacion de fallas en el equipo",
-        "Aforo de vasos de resina, emulsión, endurecedor, agua",
-        "Funcionamiento y proposito de las bandas básculas",
-        "Funcionamiento y proposito de la calibracion de las boquillas en el blender.",
-        "Funcionamiento y calibracion para los dedos de los blender",
-        "Proposito y funcionamiento de los rodillos grafilados formadora capa externa",
-        "Proposito y funcionamiento dedos de las fomadoras",
-        "Interpretacion de resultados de humedad, densidad, granulometrias.",
-        "Inspeccion de prensa funcionamiento de sistema termico e hidraulico",
-        "Revision y operación de la pantalla de cocinas y blender",
-        "Variables de prensa: Distancias; Curvas de Presión; Temperatura; Velocidades",
-        "Que debo hacer cuando tengo caida de tension",
-        "Que debo hacer cuando hay tablero atrapado en la presa",
-        "Controles de calidad e interpretacion de resultados",
-        "Diligenciameinto de bitacora",
-        "Seguimiento plan de produccion",
-        "Seguimiento tanques de resina",
-        "Revision de sierras en ferrocontrol",
-        "Reporte de producción Oracle",
-        "Fabricación de tablero de baja emisión",
-        "Variables de control del tablero: dimensiones, espesores, densidades",
-        "Procedimeinto de descargue de resina",
-        "Control y preparacion de insumos",
-        "Control de sierras",
-        "Analisis ACR",
-        "Limpiezas programadas en linea contiroll",
-        "Solicitud de consumibles, cuentas y centros de costo",
-        "Rutinas de aseo programadas en turnos de relevo",
-        "Capacitacion en procedimientos de calidad",
-        "Diligenciamiento permisos de trabajo seguro",
-        "Costo de fabricacion"
-    ],
-    "Aux Maderas": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Realizar la limpieza de la maquinaria del área de molinos y limpieza de reciclado",
-        "Realizar la limpieza de la zonas de molinos y limpieza de reciclado",
-        "Realizar limpieza foso de molinos y foso de reciclado",
-        "Monitorear llenado de contenedores de rechazo de material",
-        "Realizar la limpieza de la zonas patio de secador",
-        "Realizar la limpieza de la zonas windsifter",
-        "Apoyar el montaje y desmontaje de rotores de molinos",
-        "Apoyo limpiezas de equipos en paradas programadas",
-        "Reportar anomalias de los equipos al operador I y al gestor de turno",
-        "Realizar limpieza de imanes (bandas magneticas, neodimio, imanes)",
-        "Procedimiento para solicitud de insumos en almacén",
-        "Proceso para realizar Check List de la línea"
-    ],
-    "Aux Conti": [
-        "Objetivo del cargo, indicadores, expectativas",
-        "Apoyo limpiezas de equipos en paradas programadas",
-        "Reportar anomalias de los equipos al operador I y al gestor de turno",
-        "Limpieza de tanques y mallas del Sistema Oñaz",
-        "Limpieza de zonas de filtros de Contiroll",
-        "Limpieza del estado de las zonas laterales de la linea de formación",
-        "Desocupar canecas de sobredimensionado formadoras Capa externas",
-        "Limpiar y retirar el material de la separadora de discos superior a la entrada de la formadora Capa interna",
-        "Desocupar bandeja sobredimensionados formadora capa interna",
-        "Limpieza e inspección de los grafilados de las formadoras capas externas",
-        "Limpieza con aire comprimido en los cepillos de la preprensa y rodillos internos de la banda",
-        "Limpieza de bandeja de recoleccion de polvo entrada a la prensa",
-        "Limpieza del foso de la prensa",
-        "Limpieza piso alrededor de la prensa",
-        "Levantamiento del tablero del rechazo de ferrocontrol",
-        "Ruta de inspeccion de linea desde blenders hasta las mesas de salida de pallets",
-        "Entrega de turno (comunicar novedades, pendientes, objetivos del turno, cambios de comisión)",
-        "Linea de formación tablero",
-        "Limpieza bandejas prensa (lado izquierdo)",
-        "Limpieza unidad hidraulica silo CI y CEX",
-        "Limpieza sistema de tensión de banda linea de formación",
-        "Procedimiento para solicitud de insumos en almacén",
-        "Proceso para realizar Check List de la línea"
-    ]
-};
+        "Vecoplan": ["Objetivo del cargo, indicadores, expectativas","Ficha tecnica centerline de vecoplan","Tipologias de materias primas","Funcionamiento de maquinaria amarilla para alimentar los equipos","Partes de la maquina","Consumibles de la maquina","Proceso de vecoplan: entradas y salidas","Procedimiento triturado en Vecoplan","Alimentación material Vecoplan","Instructivo cambio cuchillas vecoplan","Instructivo Cambio contracuchillas vecoplan","Instructivo Limpieza Vecoplan","Instructivo Revisión chip Vecoplan","Instructivo triturado de reciclado limpio para prueba BE","Instructivo Alimentación de material a Vecoplan para prueba BE","Instructivo de desatasque del equipo","Reporte de novedades del equipo durante la operación","Reporte de información en la bitacora (Física y Excel)","Procedimiento para solicitud de insumos en almacén","Proceso para realizar Check List de la línea","Inducción para reportar desviaciones de mantenimiento en los equipos."],
+        "Hacker": ["Objetivo del cargo, indicadores, expectativas","Ficha tecnica centerline de hacker","Tipologias de materias primas","Funcionamiento de maquinaria amarilla para alimentar los equipos","Partes de la maquina","Consumibles de la maquina","Instructivo de desatasque del equipo","Reporte de novedades del equipo durante la operación","Reporte de información en la bitacora (Física y Excel)","Proceso de hacker: entradas y salidas","Instructivo Cambio contracuchilla hacker","Cambio cuchillas hacker","Instructivo Limpieza astilladora hacker","Formula de alimentación a madera verde","Revisión de chip de madera verde","Procedimiento para solicitud de insumos en almacén","Proceso para realizar Check List de la línea","Inducción para reportar desviaciones de mantenimiento en los equipos."],
+        "Cargador": ["Objetivo del cargo, indicadores, expectativas","Partes de la maquina","Reporte de novedades del equipo durante la operación","Reporte de información en la bitacora (Física y Excel)","Proceso de cargador","Instructivo alimentación de material a mesa de reciclado y verde","Instructivo limpieza cargador frontal","Instructivo aforo tolva madera verde","Instructivo aforo tolva madera reciclada","Instructivo limpieza mesa alimentación","Operación de cargador","Certificación de competencias del cargador","Procedimiento para solicitud de insumos en almacén","Proceso para realizar Check List de la línea","Inducción para reportar desviaciones de mantenimiento en los equipos."],
+        "Afilado": ["Objetivo del cargo, indicadores, expectativas","Consumibles de la maquina","Realizar cambio de rotor (desmontaje y montaje).","Realizar lavado de rotor.","Realizar desmontaje de cuchillas del rotor.","Realizar desacople de cuchillas del portacuchillas.","Realizar limpieza de cuchillas.","Realizar alistamiento de afiladora para proceso de afilado.","Adecuar equipo para los angulos de afilado de cuchillas según corresponda.","Realizar afilado de cuchillas.","Realizar acople de cuchillas afiladas con portacuchillas.","Realizar montaje de cuchillas en el rotor.","Realizar calibración de resalto según parametro establecido.","Realizar cambio de contracuchillas de rotor de molinos y refinadores.","Realizar cambio de zapatas y elementos de molienda en molinos y refinadores.","Realizar cambio de placas de desgaste en molinos.","Realizar calibración de contracuchillas y cuchillas de acuerdo al parametro.","Instructivos de proceso de afilado y calibración de rotor.","Formato de seguimiento a calibración y cambio de rotores.","Realizar diligenciamiento de bitacora de madera humeda.","Formulas de madera alimentada en molinos de acuerdo a la referencia fabricada.","Funcionamiento general de molinos y reciclado.","Variables a controlar en molinos y afilado.","Centerline molinos","Funcionamiento de un molino pallmann","Procedimiento para solicitud de insumos en almacén","Proceso para realizar Check List de la línea","Inducción para reportar desviaciones de mantenimiento en los equipos."],
+        "Molinos": ["Objetivo del cargo, indicadores, expectativas","Ficha tecnica centerline de Molinos","Tipologias de materias primas","Partes de la maquina","Proceso de molienda de madera verde","Proceso de molienda de madera reciclada","Induccion especifica en molinos: PZKR12-450 y PZKR14-450","Formulación de maderas","Cambio de rotores en molinos","Funcionamiento cleanomat en los molinos y sus cuidados.","Funcionamiento del rodillo magnetico","Funcionamiento del agitador del silo de molinos","Funcionamiento linea de reciclado","Cambio de piezas de desgaste: Zapatas, Contracuchillas, Placas de Desgaste, Anillos de Desgaste","Calibración del cuchilla y contracuchilla","Seguimiento a las aperturas de metal.(que debe hacer al aumentar aperturas por metal en cassel)","Funcionaiento afiladora de cuchillas","Diligenciamiento de bitacoras","Analisis acr","Indicadores del area","Calibrador Pie de rey y flexometro","Solicitud de consumibles, cuentas y centros de costo","Operación manual y automatica de equipos desde paneles locales.","Procediminiento de cambio de anillo portacuchilla","Procediminiento de cambio de piezas de desgaste molinos","Procedimiento cambio de cuchillas y contra cuchilla vecoplan pequeño","Procedimiento limpieza de tamiz chip cleaner","Procedimiento limpieza de magnetos limpieza de reciclado","Proceso de desatasque de un molino","Cambio de piezas de desgaste refinadores","Aspectos de atencion y revision en los molinos","Interpretacion de pantalla de operación reciclado","Interpretacion de pantalla de operación molinos incluyendo molino 1","Interpretacion silos de madera humeda(niveles, tornillo doble, elevador)","Control de calidad Granulometrias y esbeltez","Formulas de madera y alimentacion","Interpretacion y verificacion del sistema de extraccion en molinos junto la operación de las valvulas.","Explicion del funcionamiento dynascreen","Ajustes varios limpieza de reciclado GAP,velocidades, flujos","Sistemas de bloqueo y etiquetado lototo para intervenciones.","Sistemas de seguridad de los equipos y donde bloquear para realizar intervenciones"],
+        "Secador": ["Objetivo del cargo, indicadores, expectativas","Ficha tecnica centerline de Secador","Tipologias de materias primas","Partes de la maquina","Consumibles de la maquina","Silos de madera húmeda, rechazo, polvo, madera seca.","Tornillos de transporte de material.(verticales, horizontales, inyectores, doble efecto, sensores de atasque, chutas.etc)","Agitadores de todos los silos","Banda bascula madera húmeda( peines rotativos, cinta transportadora, sensores inductivos de nivel, neodimio)","Cámara de combustión ventiladores y ciclones de ceniza.","Alimentación de polvo y sistemas asociados.","Secador(banda de alimentacion,ventilador principal, multiciclones, válvulas rotativas, transportadores de cadena.)","Multiciclones: Separación de particulas finas","Red contra incendios(sistemas de detección, inyección, sistema visualización grecon.)","Zarandas(silo firelock, mangas, cribas tamices.)","Sistemas de transporte de cada una de las descargas de las zarandas.","Airgrader","Refinadores y ciclón filtros.","Blowers y sistema de ciclón filtros en el silo de polvo.","Winsifter y sistemas de transporte de material(ventiladores, ciclones)","Pantallas de operaciones","Ubicación de paneles de operación local.","Interpretación pantallas de operación quemador.","Interpretación pantallas de operación madera húmeda","Interpretación pantallas de operación área de zarandas","interpretación pantalla sistema grecon.","interpretación y control de cámaras.","Interpretación de fallas suministradas por pantallas de operación.","Capacidades en zonas de operación( banda bascula, zarandas)","Control de humedades en la operación. En la entrada y salida del secador.","Control en la operación de refinadores.(condiciones de arranque)","Operación del quemador en manual y automático,( válvulas, valores normales de operación, control de temperaturas salida del secador)","Interpretación de temperaturas en sistema completo del secador.","Proceso de quemado de polvo en producción y sin producción.(temperaturas min para poder quemar polvo)","Operación de filtros de extracción de finalizado y zarandas.","Dosificación de madera húmeda y rechazo","¿Como arrancar en forma manual desde los paneles locales equipos en zarandas?.","¿Como interpretar lo niveles de los silos y en que momento debo parar el paso de material para evitar que quede material en los transportes?.","¿Como y cuando puedo resetear fallas en el sistema grecon?","¿Cómo debe arrancar a dosificar material y que condiciones debo tener para poderlo hacer?.","¿Cómo debo alimentar la banda bascula para evitar atasques?","¿Cuál es el procedimiento para el desatasque de equipos y su respectivo reset para arranque?","¿En que casos debo rechazar material y como hacerlo?","Funcionamiento de las zarandas y su principio","¿Cómo debo organizar el equipo para realizar limpieza de neodimio? Ver procedimiento","¿Cómo debo actuar en caso de caída de tensión?(ver condiciones, válvulas, grecon, el secador debe estar girando con la planta de emergencia.","¿Cómo realizar inspecciones en el equipo evitando descargas de grecon?(procedimiento para inhabilitar zonas en grecon)","¿Cómo hacer el cambio de mangas en las zarandas?","¿Cómo alimentar solo zaranda 2 o regular el paso entre zarandas?"],
+        "Cocinas": ["Objetivo del cargo, indicadores, expectativas","Tipologias de materias primas (Químicos)","Partes de la maquina","Realizar encendido de equipos en la secuencia correcta en cocinas y blenders.","Solicitar a almacén las materias primas y consumibles requeridos en el proceso.","Realizar preparación del endurecedor.","Tomar la muestra de endurecedor y llevarla al laboratorio para su análisis.","Tomar la muestra de granulometrias y humedades en capa interna y capa externa en banda báscula y formadoras y llevarla al laboratorio para su análisis.","Realizar la preparación de resina/pigmento para el tablero RH.","Realizar rutina de inspección y limpieza de las bandas basculas.","Realizar rutina de inspección y limpieza de las boquillas en blenders.","Realizar calibración de las boquillas en blenders.","Realizar rutina de inspección de funcionamiento del chiller y enfriamiento de los blenders.","Realizar rutina de inspección y limpieza del sistema de dosificación del desmoldante.","Realizar la preparación del desmoldante en línea de formación y preprensa.","Realizar permisos de seguridad y descargue de resina y emulsión en tanques de almacenamiento.","Realizar las limpiezas requeridas cuando se presenten atasque en el proceso.","Apoyar al operario de la prensa en las limpiezas de rutina que requiera.","Realizar cambio de resina cuando se realice cambio de comisión.","Realiza aforo de vasos para verificar caudal de consumo.","Realizar entrega de pallets a finalizado","Realizar limpieza de los rechazos de la separadora de discos superior e inferior","Reporte de novedades del equipo durante la operación","Capacitación proceso contiroll","Variables críticas de encolado","Funcionamiento del sistema de desmoldante de formación. Problemas y soluciones. Rutina de limpieza","Preparación de endurecedor y resina-pigmento. Problema y soluciones","Rutina de limpieza de contiroll en operación","Proceso tablero baja emisión"],
+        "Ferrocontrol": ["Objetivo del cargo, indicadores, expectativas","Ficha tecnica centerline de Ferrocontrol","Partes de la maquina","Consumibles de la maquina","Realizar encendido de equipos en la secuencia correcta en ferrocontrol y shs.","Realizar medición de densidad del tablero.","Realizar medición de diagonales del tablero.","Realizar medición de largo y ancho del tablero.","Realizar medición constante del espesor del tablero en diferentes puntos.","Realizar cambio de comisión en ferrocontrol y shs.","Realizar la toma de muestra de tablero para laboratorio.","Realizar la toma de muestra cada 30 minutos para revisar espesores y densidad","Realizar limpieza de sensores de los equipos (Grecon, mesas shs, enfriadores).","Realizar el cambio de sierras viajeras, destrozadoras y rechazo.","Revisar funcionamiento del sistema Oñaz: Tanque de foso, Tanque exterior, Limpieza de malla.","Realizar actividades de orden y aseo de su zona","Reporte de novedades del equipo durante la operación","Interpretación de pantallas de operación"],
+        "Prensa": ["Objetivo del cargo, indicadores, expectativas","Ficha tecnicas de operación","Tipologias de materias primas (Maderas y Químicos)","Consumibles de la maquina","Funcionamiento tanques de resinas y emulsión","Funcionamiento de las cocinas: Resina, Emulsión, Endurecedor y Agua","Sistema de transporte de material: redler y tornillos","Funcionamiento Blenders capa interna y capa externa","Funcionamiento del sistema de enfriamiento: Chiller","Funcionamiento Formadoras capa externa","Funcionamiento Formadoras capa interna","Funcionamiento separadora de discos","Funcionamiento linea de formación","Funcionamiento sistema de medidor de unidad en línea","Funcionamiento sistema de aspersión de desmoldante","Funcionamiento Imanes ferrosos en la linea","Funcionamiento Pre prensa","Funcionamiento Mesa bascula linea de formación","Funcionamiento Sistema de Deteccion cassel","Funcionamiento Sistema de rechazo de material (nariz hasta silo de rechazo)","Funcionamiento Prensa contiroll","Funcionamiento Sistema ferrocontrol","Funcionamiento Sistema medidor de espesor y ampollas: Grecom","Sierras y tipo de sierras","Funcionamiento SHS (sierras de rechazo, mesas de transporte, cooler,staker)","Funcionamiento Mesas de salida pallets.","Funcionamiento Sistemas de extraccion de linea contiroll(filtro ferrocontrol, filtro formacion)","Funcionamiento Sistema de transporte de material de rechazo(sistema blower)","Funcionamiento Sistema termico prensa","Funcionamiento Sistema hidraulico de la prensa y pre prensa","Funcionamiento Sistema OÑAZ","Funcionamiento red contra incendios","Funcionamiento Sistema Firefly","Operación manual de equipos desde paneles locales.","Sistemas de bloqueo y etiquetado para intervenciones.","Funcionamiento y condiciones para cerrar nariz","Verificacion de funcionamiento bandas de la prensa.(cuidados, revision bolt y sistemas de centrado de la banda)","Interpretacion de pantallas de monitoreo operación linea.","Manipulacion de parametros de operación desde pantalla de parametros.","Como se fabrica en linea de contiroll siguiendo center lines","Como cambiar de referencia en IMAL y pantalla de parametros.","Operación y ajustes de espesores","Interpretacion de fallas en el equipo","Aforo de vasos de resina, emulsión, endurecedor, agua","Funcionamiento y proposito de las bandas básculas","Funcionamiento y proposito de la calibracion de las boquillas en el blender.","Funcionamiento y calibracion para los dedos de los blender","Proposito y funcionamiento de los rodillos grafilados formadora capa externa","Proposito y funcionamiento dedos de las fomadoras","Interpretacion de resultados de humedad, densidad, granulometrias.","Inspeccion de prensa funcionamiento de sistema termico e hidraulico","Revision y operación de la pantalla de cocinas y blender","Variables de prensa: Distancias; Curvas de Presión; Temperatura; Velocidades","Que debo hacer cuando tengo caida de tension","Que debo hacer cuando hay tablero atrapado en la presa","Controles de calidad e interpretacion de resultados","Diligenciameinto de bitacora","Seguimiento plan de produccion","Seguimiento tanques de resina","Revision de sierras en ferrocontrol","Reporte de producción Oracle","Fabricación de tablero de baja emisión","Variables de control del tablero: dimensiones, espesores, densidades","Procedimeinto de descargue de resina","Control y preparacion de insumos","Control de sierras","Analisis ACR","Limpiezas programadas en linea contiroll","Solicitud de consumibles, cuentas y centros de costo","Rutinas de aseo programadas en turnos de relevo","Capacitacion en procedimientos de calidad","Diligenciamiento permisos de trabajo seguro","Costo de fabricacion"],
+        "Aux Maderas": ["Objetivo del cargo, indicadores, expectativas","Realizar la limpieza de la maquinaria del área de molinos y limpieza de reciclado","Realizar la limpieza de la zonas de molinos y limpieza de reciclado","Realizar limpieza foso de molinos y foso de reciclado","Monitorear llenado de contenedores de rechazo de material","Realizar la limpieza de la zonas patio de secador","Realizar la limpieza de la zonas windsifter","Apoyar el montaje y desmontaje de rotores de molinos","Apoyo limpiezas de equipos en paradas programadas","Reportar anomalias de los equipos al operador I y al gestor de turno","Realizar limpieza de imanes (bandas magneticas, neodimio, imanes)","Procedimiento para solicitud de insumos en almacén","Proceso para realizar Check List de la línea"],
+        "Aux Conti": ["Objetivo del cargo, indicadores, expectativas","Apoyo limpiezas de equipos en paradas programadas","Reportar anomalias de los equipos al operador I y al gestor de turno","Limpieza de tanques y mallas del Sistema Oñaz","Limpieza de zonas de filtros de Contiroll","Limpieza del estado de las zonas laterales de la linea de formación","Desocupar canecas de sobredimensionado formadoras Capa externas","Limpiar y retirar el material de la separadora de discos superior a la entrada de la formadora Capa interna","Desocupar bandeja sobredimensionados formadora capa interna","Limpieza e inspección de los grafilados de las formadoras capas externas","Limpieza con aire comprimido en los cepillos de la preprensa y rodillos internos de la banda","Limpieza de bandeja de recoleccion de polvo entrada a la prensa","Limpieza del foso de la prensa","Limpieza piso alrededor de la prensa","Levantamiento del tablero del rechazo de ferrocontrol","Ruta de inspeccion de linea desde blenders hasta las mesas de salida de pallets","Entrega de turno (comunicar novedades, pendientes, objetivos del turno, cambios de comisión)","Linea de formación tablero","Limpieza bandejas prensa (lado izquierdo)","Limpieza unidad hidraulica silo CI y CEX","Limpieza sistema de tensión de banda linea de formación","Procedimiento para solicitud de insumos en almacén","Proceso para realizar Check List de la línea"]
+    };
 
     function actualizarTemas() {
         const lineaSel   = document.getElementById('linea').value;
@@ -458,7 +118,7 @@
         opcionDefault.textContent = "Seleccione un tema...";
         temaSelect.appendChild(opcionDefault);
 
-        catalogo[lineaSel].forEach(tema => {
+        catalogo[lineaSel].forEach(function(tema) {
             const opt = document.createElement('option');
             opt.value = tema;
             opt.textContent = tema;
@@ -467,8 +127,8 @@
     }
 
     navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } })
-        .then(s => { video.srcObject = s; video.play(); statusTxt.innerText = "Cámara activa"; })
-        .catch(() => { statusTxt.innerText = "Cámara no disponible — usa Galería"; });
+        .then(function(s) { video.srcObject = s; video.play(); statusTxt.innerText = "Cámara activa"; })
+        .catch(function() { statusTxt.innerText = "Cámara no disponible — usa Galería"; });
 
     function capturar() {
         const c = document.createElement('canvas');
@@ -483,7 +143,7 @@
 
     function cargarImagen(e) {
         const r = new FileReader();
-        r.onload = () => {
+        r.onload = function() {
             imagenB64 = r.result;
             preview.src = r.result;
             preview.style.display = "block";
@@ -527,15 +187,15 @@
             });
 
             if (res.ok) {
-                alert("✅ Registro guardado con éxito.");
+                alert("Registro guardado con exito.");
                 location.reload();
             } else {
                 throw new Error();
             }
-        } catch {
-            alert("Error al guardar. Verifica tu conexión.");
+        } catch(e) {
+            alert("Error al guardar. Verifica tu conexion.");
             btnEnviar.disabled = false;
-            statusTxt.innerText = "Error de sincronización.";
+            statusTxt.innerText = "Error de sincronizacion.";
         }
     }
 </script>
